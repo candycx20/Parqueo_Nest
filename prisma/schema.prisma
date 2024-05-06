@@ -15,4 +15,5 @@ model tickets {
   total       Decimal?  @db.Decimal(10, 2)
   createdat   DateTime? @default(now()) @db.Timestamp(6)
   updatedat   DateTime? @default(now()) @db.Timestamp(6)
+  estado      Int?
 }
